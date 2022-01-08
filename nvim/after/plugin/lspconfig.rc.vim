@@ -85,19 +85,19 @@ nvim_lsp.vimls.setup {
   on_attach = on_attach,
 }
 
--- TypeScript
-nvim_lsp.tsserver.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-  handlers = {
-    ['client/registerCapability'] = function(_, _, _, _)
-      return {
-        result = nil;
-        error = nil;
-      }
-    end
-  };
-}
+-- -- TypeScript
+-- nvim_lsp.tsserver.setup {
+--   capabilities = capabilities,
+--  on_attach = on_attach,
+--  handlers = {
+--    ['client/registerCapability'] = function(_, _, _, _)
+--      return {
+--        result = nil;
+--        error = nil;
+--      }
+--    end
+--  };
+-- }
 
 EOF
 

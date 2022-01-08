@@ -32,6 +32,9 @@ Plug 'saadparwaiz1/cmp_luasnip'
 " Nvim autopairs
 Plug 'windwp/nvim-autopairs'
 
+" Black (Python)
+Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}
+
 " Need to config, have some issues
 " " LSPsaga
 " Plug 'glepnir/lspsaga.nvim'
