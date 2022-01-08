@@ -1,4 +1,5 @@
 lua << EOF
+
 local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
 
@@ -36,6 +37,14 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 -- Python
 nvim_lsp.pyright.setup {
   on_attach = on_attach,
+  handlers = {
+    ['client/registerCapability'] = function(_, _, _, _)
+      return {
+        result = nil;
+        error = nil;
+      }
+    end
+  };
 }
 
 -- Docker 
@@ -46,11 +55,29 @@ nvim_lsp.dockerls.setup {
 -- CSS
 nvim_lsp.cssls.setup {
   capabilities = capabilities,
+  on_attach = on_attach,
+  handlers = {
+    ['client/registerCapability'] = function(_, _, _, _)
+      return {
+        result = nil;
+        error = nil;
+      }
+    end
+  };
 }
 
 -- HTML
 nvim_lsp.html.setup {
   capabilities = capabilities,
+  on_attach = on_attach,
+  handlers = {
+    ['client/registerCapability'] = function(_, _, _, _)
+      return {
+        result = nil;
+        error = nil;
+      }
+    end
+  };
 }
 
 -- Vimscript
@@ -58,4 +85,19 @@ nvim_lsp.vimls.setup {
   on_attach = on_attach,
 }
 
+-- TypeScript
+nvim_lsp.tsserver.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  handlers = {
+    ['client/registerCapability'] = function(_, _, _, _)
+      return {
+        result = nil;
+        error = nil;
+      }
+    end
+  };
+}
+
 EOF
+
