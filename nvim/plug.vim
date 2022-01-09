@@ -35,6 +35,9 @@ Plug 'windwp/nvim-autopairs'
 " Black (Python)
 Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}
 
+" Lualine
+Plug 'nvim-lualine/lualine.nvim'
+
 " Need to config, have some issues
 " " LSPsaga
 " Plug 'glepnir/lspsaga.nvim'
