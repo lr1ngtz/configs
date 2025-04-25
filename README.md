@@ -1,0 +1,1 @@
+## Configs for emacs, zsh (oh-my-zsh), ghostty

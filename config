@@ -1,0 +1,10 @@
+# ghostty config
+macos-option-as-alt = left
+
+window-height = 36
+window-width = 130
+
+font-size = 18
+
+# theme = Terminal Basic
+theme = CLRS
