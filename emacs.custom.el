@@ -80,22 +80,10 @@
 ;;; git-gutter
 (require 'git-gutter)
 (global-git-gutter-mode t)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(gruvbox-dark-medium misterioso))
- '(custom-safe-themes
-   '("5a0ddbd75929d24f5ef34944d78789c6c3421aa943c15218bac791c199fc897d"
-     default))
- '(git-gutter:added-sign "++")
- '(git-gutter:deleted-sign "--")
- '(git-gutter:modified-sign "==")
- '(git-gutter:update-interval 2)
- '(package-selected-packages
-   '(consult git-gutter-fringe gruvbox-theme marginalia orderless pbcopy
-             vertico)))
+(setq git-gutter:added-sign "++")
+(setq git-gutter:deleted-sign "--")
+(setq git-gutter:modified-sign "==")
+(setq git-gutter:update-interval 2)
 
 (global-set-key (kbd "C-c g h") 'git-gutter:popup-hunk)
 (global-set-key (kbd "C-c g n") 'git-gutter:next-hunk)
@@ -111,7 +99,6 @@
  '(git-gutter:added ((t (:foreground "#b8bb26" :background "#32302f"))))
  '(git-gutter:deleted ((t (:foreground "#fb4934" :background "#32302f"))))
  '(git-gutter:modified ((t (:foreground "#fabd2f" :background "#32302f")))))
-
 
 ;;; odin source code default ripgrep case-insensetive
 (require 'consult)
