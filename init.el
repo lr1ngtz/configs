@@ -94,14 +94,6 @@
 
 ;;; vc-diff
 (global-set-key (kbd "C-c d") 'vc-diff)
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(git-gutter:added ((t (:foreground "#b8bb26" :background "#32302f"))))
-;;  '(git-gutter:deleted ((t (:foreground "#fb4934" :background "#32302f"))))
-;;  '(git-gutter:modified ((t (:foreground "#fabd2f" :background "#32302f")))))
 
 ;;; odin source code default ripgrep case-insensetive
 (require 'consult)
@@ -126,15 +118,32 @@
     (compile "odin run . -out:build/main")))
 (global-set-key (kbd "C-c l") 'run-odin-compile)
 
-;; requires build directory and project.el file in the root of the project
 (defun run-odin-debug-compile ()
   "Run 'odin run . -debug'"
   (interactive)
   (let ((default-directory (if (project-current)
                                (project-root (project-current))
                              default-directory)))
-    (compile "odin run . -out:build/main")))
-(global-set-key (kbd "C-c k") 'run-odin-debug-compile)
+    (compile "odin run . -debug -out:build/main")))
+(global-set-key (kbd "C-c C-l") 'run-odin-debug-compile)
+
+(defun build-odin-compile ()
+  "Run 'odin build .'"
+  (interactive)
+  (let ((default-directory (if (project-current)
+                               (project-root (project-current))
+                             default-directory)))
+    (compile "odin build . -out:build/main")))
+(global-set-key (kbd "C-c b") 'build-odin-compile)
+
+(defun build-odin-debug-compile ()
+  "Run 'odin build . -debug'"
+  (interactive)
+  (let ((default-directory (if (project-current)
+                               (project-root (project-current))
+                             default-directory)))
+    (compile "odin build . -debug -out:build/main")))
+(global-set-key (kbd "C-c C-b") 'build-odin-debug-compile)
 
 ;; golang config
 (require 'go-mode)
