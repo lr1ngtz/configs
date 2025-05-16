@@ -5,6 +5,14 @@
 ;; indenting
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+(setq-default standard-indent 4)
+
+;;highlight trailing whitespace
+(global-whitespace-mode 1)
+(setq whitespace-style '(face trailing tabs spaces empty))
+(set-face-background 'whitespace-trailing "#cc0000") ; red background
+(set-face-foreground 'whitespace-trailing nil)
+
 ;; enable c-x c-l to downcase selected region
 (put 'downcase-region 'disabled nil)
 ;; enable c-x c-u to upcase selected region
