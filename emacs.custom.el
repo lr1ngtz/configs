@@ -8,8 +8,8 @@
    '("5a0ddbd75929d24f5ef34944d78789c6c3421aa943c15218bac791c199fc897d"
      default))
  '(package-selected-packages
-   '(consult git-gutter-fringe go-mode gruvbox-theme marginalia orderless
-             pbcopy pyvenv vertico)))
+   '(consult git-gutter-fringe gruvbox-theme marginalia orderless pbcopy
+             pyvenv vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

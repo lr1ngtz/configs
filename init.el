@@ -152,11 +152,3 @@
                              default-directory)))
     (compile "odin build . -debug -out:build/main")))
 (global-set-key (kbd "C-c C-b") 'build-odin-debug-compile)
-
-;; golang config
-(require 'go-mode)
-(add-hook 'go-mode-hook
-          (lambda ()
-            (setq tab-width 4) ;; go uses tabs, width 4
-            (setq indent-tabs-mode 1) ;; use tabs, not spaces
-            (add-hook 'before-save-hook 'gofmt-before-save nil t))) ;; run gofmt on save
