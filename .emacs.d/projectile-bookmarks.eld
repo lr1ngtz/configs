@@ -1,0 +1,1 @@
+("~/projects/techno_escape/" "~/projects/techno_escape")
