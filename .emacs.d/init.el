@@ -8,10 +8,6 @@
 (setq-default standard-indent 4)
 
 ;;highlight trailing whitespace
-;; (global-whitespace-mode 1)
-;; (setq whitespace-style '(face trailing tabs spaces empty))
-;; (set-face-background 'whitespace-trailing "#cc0000") ; red background
-;; (set-face-foreground 'whitespace-trailing nil)
 (global-whitespace-mode 1)
 (setq whitespace-style '(face trailing))
 (set-face-background 'whitespace-trailing "#cc0000") ; red background
@@ -30,9 +26,6 @@
 ;; select scope
 (global-set-key (kbd "C-c s") 'mark-sexp)
 (global-set-key (kbd "C-x ;") 'comment-line)
-
-;;; load gruvbox-theme
-;; (require 'gruvbox-theme)
 
 ;; ensure emacs can find executables installed by homebrew on intel macs
 (add-to-list 'exec-path "/usr/local/bin")
@@ -93,20 +86,11 @@
 (global-set-key (kbd "C-c f") 'consult-fd)
 (global-set-key (kbd "C-c r") 'consult-ripgrep)
 
-;;; git-gutter
-(require 'git-gutter)
-(global-git-gutter-mode t)
-(setq git-gutter:added-sign "++")
-(setq git-gutter:deleted-sign "--")
-(setq git-gutter:modified-sign "==")
-(setq git-gutter:update-interval 2)
-
-(global-set-key (kbd "C-c g h") 'git-gutter:popup-hunk)
-(global-set-key (kbd "C-c g n") 'git-gutter:next-hunk)
-(global-set-key (kbd "C-c g p") 'git-gutter:previous-hunk)
-
 ;;; vc-diff
 (global-set-key (kbd "C-c d") 'vc-diff)
+
+;;; compile
+(global-set-key (kbd "C-c c") 'compile)
 
 ;;; odin source code default ripgrep case-insensetive
 (require 'consult)
@@ -156,22 +140,3 @@
                              default-directory)))
     (compile "odin build . -debug -out:build/main")))
 (global-set-key (kbd "C-c C-b") 'build-odin-debug-compile)
-
-
-;; Enable eglot for go-mode
-;; (require 'eglot)
-;; (add-hook 'go-mode-hook 'eglot-ensure)
-;; (add-to-list 'eglot-server-programs '(go-mode . ("gopls")))
-
-;; ;; Optional: Enable eldoc for hover documentation
-;; (add-hook 'go-mode-hook 'eldoc-mode)
-
-(global-set-key (kbd "C-c h") 'eldoc)
-
-
-;; catppuccin theme
-;; (setq catppuccin-flavor 'latte) ; or 'latte, 'macchiato, or 'mocha
-(setq catppuccin-flavor 'mocha) ; or 'latte, 'macchiato, or 'mocha
-(load-theme 'catppuccin t)
-(add-hook 'server-after-make-frame-hook #'catppuccin-reload) ; emacsclient
-
