@@ -145,14 +145,14 @@
 (defun my/switch-theme-by-time ()
   "switch emacs theme based on the current time."
   (let ((hour (string-to-number (format-time-string "%H"))))
-    (if (or (>= hour 20) (< hour 8))
-        ;; nighttime (8 pm to 8 am): load dark theme
+    (if (or (>= hour 19) (< hour 7))
+        ;; nighttime (7 pm to 7 am): load dark theme
         (load-theme 'gruvbox-dark-medium t)
-      ;; daytime (8 am to 8 pm): load light theme
+      ;; daytime (7 am to 7 pm): load light theme
       (load-theme 'gruvbox-light-soft t))))
 
 ;; run the theme switcher when emacs starts
 (add-hook 'emacs-startup-hook 'my/switch-theme-by-time)
 
 ;; Periodically check the time and switch theme if needed
-(run-at-time "0 sec" 3600 'my/switch-theme-by-time)
+(run-at-time "0 sec" 1800 'my/switch-theme-by-time)
