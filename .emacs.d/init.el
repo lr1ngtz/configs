@@ -13,6 +13,8 @@
 (set-face-background 'whitespace-trailing "#cc0000") ; red background
 (set-face-foreground 'whitespace-trailing nil)
 
+;; Set default font for emacs gui
+(add-to-list 'default-frame-alist '(font . "JetBrains Mono-14"))
 
 ;; enable c-x c-l to downcase selected region
 (put 'downcase-region 'disabled nil)
@@ -21,15 +23,16 @@
 ;; don't show the splash screen
 (setq inhibit-startup-message t)
 (menu-bar-mode -1)
+(tool-bar-mode -1)
 ;; makes sure the contents of the buffer is refreshed automatically when the file is changed outside of emacs
 (global-auto-revert-mode t)
 ;; select scope
 (global-set-key (kbd "C-c s") 'mark-sexp)
 (global-set-key (kbd "C-x ;") 'comment-line)
 
-;; ensure emacs can find executables installed by homebrew on intel macs
-(add-to-list 'exec-path "/usr/local/bin")
-(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+;; ensure emacs can find executables installed by homebrew on intel macos
+;; (add-to-list 'exec-path "/usr/local/bin")
+;; (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 
 ;; melpa
 (require 'package)
@@ -55,6 +58,12 @@
   :mode "\\.odin\\'"
   :defer t)
 
+;; golang
+(use-package go-mode
+  :ensure t
+  :mode "\\.go\\'"
+  :defer t)
+
 ;; display line numbers in every buffer
 ;; (global-display-line-numbers-mode)
 
@@ -75,12 +84,12 @@
         (concat "~/.emacs.d/backup/"
                 (file-name-nondirectory filename))))
 
-;; enable pbcopy
-(use-package pbcopy
-  :init
-  (turn-on-pbcopy)  ; integrate with system clipboard
-  (setq select-enable-clipboard t)
-  :defer t)
+;; ;; enable pbcopy (macos)
+;; (use-package pbcopy
+;;   :init
+;;   (turn-on-pbcopy)  ; integrate with system clipboard
+;;   (setq select-enable-clipboard t)
+;;   :defer t)
 
 
 ;;; enable vertico, consult, orderless, and marginalia

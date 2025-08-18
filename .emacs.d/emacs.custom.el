@@ -14,7 +14,7 @@
      "276228257774fa4811da55346b1e34130edb068898565ca07c2d83cfb67eb70a"
      default))
  '(package-selected-packages
-   '(consult go-mode gruvbox-theme marginalia orderless pbcopy vertico)))
+   '(consult go-mode gruvbox-theme marginalia orderless vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
