@@ -10,4 +10,5 @@
 	"save_on_focus_lost": true,
 	"auto_complete": false,
 	"scroll_past_end": true,
+	"ensure_newline_at_eof_on_save": true,
 }
