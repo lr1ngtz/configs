@@ -9,7 +9,7 @@
      "51fa6edfd6c8a4defc2681e4c438caf24908854c12ea12a1fbfd4d055a9647a3"
      "" default))
  '(package-selected-packages
-   '(consult go-mode gruvbox-theme marginalia orderless pbcopy vertico)))
+   '(consult go-mode gruvbox-theme marginalia magit orderless pbcopy vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -118,7 +118,6 @@
          ("C-c f" . consult-find)
          ("C-c r" . consult-ripgrep)
          ("C-c o" . consult-flymake)))
-         ;; ("C-c r" . consult-grep)))
 
 (use-package orderless
   :init
@@ -139,7 +138,10 @@
   (add-to-list 'eglot-server-programs
                '((python-mode python-ts-mode)
                  "basedpyright-langserver" "--stdio"))
+  (add-to-list 'eglot-server-programs
+               '((odin-mode odin-ts-mode) "ols"))
 
   ;; Auto-enable eglot
   (add-hook 'go-mode-hook 'eglot-ensure)
-  (add-hook 'python-mode-hook 'eglot-ensure))
+  (add-hook 'python-mode-hook 'eglot-ensure)
+  (add-hook 'odin-mode-hook 'eglot-ensure))
