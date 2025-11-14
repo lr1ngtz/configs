@@ -102,9 +102,6 @@
 ;; config  project.el to ignore __pycache__
 (setq project-vc-ignores '("*/__pycache__/*"))
 
-;;; vc-diff
-(global-set-key (kbd "C-c d") 'vc-diff)
-
 ;;; compile
 (global-set-key (kbd "C-c c") 'compile)
 
@@ -116,8 +113,15 @@
 (use-package consult
   :bind (("M-g g" . consult-goto-line)
          ("C-c f" . consult-find)
-         ("C-c r" . consult-ripgrep)
-         ("C-c o" . consult-flymake)))
+         ("C-c p s" . consult-ripgrep)
+
+         ("C-r" . consult-line)
+         ("C-x b" . consult-buffer)
+         ("M-g m" . consult-imenu)
+         ("M-g M-m" . consult-imenu-multi)
+         ("C-c M" . consult-man)
+         ("C-c k" . consult-keep-lines)
+         ("C-c K" . consult-focus-lines)))
 
 (use-package orderless
   :init
@@ -129,19 +133,3 @@
   :init
   (marginalia-mode 1))
 ;;; consult group ################################################################
-
-(use-package eglot
-  :ensure t
-  :config
-  (add-to-list 'eglot-server-programs
-               '((go-mode go-ts-mode) "gopls"))
-  (add-to-list 'eglot-server-programs
-               '((python-mode python-ts-mode)
-                 "basedpyright-langserver" "--stdio"))
-  (add-to-list 'eglot-server-programs
-               '((odin-mode odin-ts-mode) "ols"))
-
-  ;; Auto-enable eglot
-  (add-hook 'go-mode-hook 'eglot-ensure)
-  (add-hook 'python-mode-hook 'eglot-ensure)
-  (add-hook 'odin-mode-hook 'eglot-ensure))
