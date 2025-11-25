@@ -13,8 +13,8 @@
      "51fa6edfd6c8a4defc2681e4c438caf24908854c12ea12a1fbfd4d055a9647a3"
      "" default))
  '(package-selected-packages
-   '(consult dumb-jump gruvbox-theme magit marginalia orderless pbcopy
-             vertico)))
+   '(consult dumb-jump gruvbox-theme magit marginalia markdown-mode
+             orderless pbcopy vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -25,9 +25,6 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(blink-cursor-mode 0)
-(setq blink-cursor-blinks 0)
-
 (setq scroll-margin 5)
 ;; indenting
 (setq-default indent-tabs-mode nil)
@@ -54,10 +51,10 @@
 
 ;; don't show the splash screen
 (setq inhibit-startup-message t)
-(menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 ;;; fix bug with menu bar mode with terminal emacs
+(menu-bar-mode -1)
 (add-hook 'after-make-frame-functions (lambda (_) (menu-bar-mode -1)))
 
 ;; font size for GUI mode
@@ -128,6 +125,9 @@
 (global-set-key (kbd "C-c c") 'compile)
 (global-set-key (kbd "C-c r") 'recompile)
 
+;;; duplicate line
+(global-set-key (kbd "C-c d") 'duplicate-line)
+
 ;;; consult group ################################################################
 (use-package vertico
   :init
@@ -188,3 +188,16 @@
 (use-package gruvbox-theme
   :config
   (load-theme 'gruvbox-dark-medium t))
+
+
+(use-package markdown-mode
+  :mode (("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init
+  (setq markdown-command "pandoc")   ;; optional but recommended
+
+  :config
+  ;; Optional nice settings most people like
+  (setq markdown-fontify-code-blocks-natively t)
+  (setq markdown-enable-math t)      ;; LaTeX math support
+  (add-hook 'markdown-mode-hook #'visual-line-mode))
