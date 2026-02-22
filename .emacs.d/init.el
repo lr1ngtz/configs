@@ -23,10 +23,10 @@
      "83a14237576924321c9b6855bd3e9b6f96d12446c0cec7b58b22775df6d4f3fe"
      "" default))
  '(package-selected-packages
-   '(company consult consult-flycheck doric-themes dumb-jump flycheck
-             go-mode gruvbox-theme magit marginalia markdown-mode
-             multiple-cursors orderless pbcopy sketch-themes tmpl-mode
-             typescript-mode vertico)))
+   '(company consult consult-flycheck dockerfile-mode doric-themes
+             dumb-jump flycheck go-mode gruvbox-theme magit marginalia
+             markdown-mode multiple-cursors orderless pbcopy
+             sketch-themes tmpl-mode typescript-mode vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -87,16 +87,6 @@
   (package-install 'use-package))
 (require 'use-package)
 (setq use-package-always-ensure t)
-
-;;; load lisp
-(add-to-list 'load-path(expand-file-name "~/.emacs.d/lisp"))
-
-;; odin syntax highlighting
-;; (load "odin-mode")
-(use-package odin-mode
-  :load-path "~/.emacs.d/lisp"
-  :mode "\\.odin\\'"
-  :defer t)
 
 ;; display line numbers in every buffer
 ;; (global-display-line-numbers-mode)
@@ -245,9 +235,23 @@
   :bind (("C-x j" . company-complete)))
 
 
+;;; load lisp
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+(require 'odin-mode)
+(add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-mode))
+
+
 ;; (use-package sketch-themes
 ;;   :config
 ;;   ;; Load black version
 ;;   (load-theme 'sketch-black t))
 ;;   ;; Load white version
 ;; ;; (load-theme 'sketch-white t))
+
+
+;;(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+;;(require 'xah-fly-keys)
+;;(xah-fly-keys-set-layout "qwerty")
+;;(xah-fly-keys 0)
