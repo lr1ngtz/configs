@@ -10,3 +10,4 @@
 * Raycast
 * Rectangle
 * iStat Menus
+* Mo https://github.com/tw93/Mole
