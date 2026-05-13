@@ -1,0 +1,501 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Odin run",
+					""
+				],
+				[
+					"Odin run current file",
+					""
+				]
+			],
+			[
+				"Odin run current file",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"uv ruff check fix",
+					""
+				],
+				[
+					"uv ruff format",
+					""
+				],
+				[
+					"uv run file",
+					""
+				]
+			],
+			[
+				"uv ruff check fix",
+				""
+			]
+		],
+		[
+			[
+				[
+					"uv ruff check fix",
+					""
+				],
+				[
+					"uv ruff format",
+					""
+				],
+				[
+					"uv run file",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"uv run file",
+				""
+			]
+		],
+		[
+			[
+				[
+					"uv ruff format",
+					""
+				],
+				[
+					"uv run file",
+					""
+				]
+			],
+			[
+				"uv ruff format",
+				""
+			]
+		],
+		[
+			[
+				[
+					"uv ruff format",
+					""
+				],
+				[
+					"uv run file",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"uv ruff format",
+				""
+			]
+		],
+		[
+			[
+				[
+					"uv run file",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"uv run file",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lsp ena",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"disable lan",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"disable lsp",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pacakge list",
+				"Package Control: List Packages"
+			],
+			[
+				"lsp settings",
+				"Preferences: LSP Settings"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"enable lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"disable ls",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus tog",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"lsp key",
+				"Preferences: LSP Key Bindings"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"lspsett",
+				"Preferences: LSP Settings"
+			],
+			[
+				"ena",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"terminus",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"enable lslp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"lsp setting",
+				"Preferences: LSP Utils Settings"
+			],
+			[
+				"package lis",
+				"Package Control: List Packages"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color s",
+				"UI: Select Color Scheme"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package con",
+				"Install Package Control"
+			],
+			[
+				"ui theme",
+				"UI: Select Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/lr1ngtz/projects/dotfiles"
+	],
+	"file_history":
+	[
+		"/Users/lr1ngtz/projects/cs/py_prep/basics/main.py",
+		"/Users/lr1ngtz/projects/cs/py_prep/patterns/repo/main.py",
+		"/Users/lr1ngtz/projects/cs/cs.sublime-project",
+		"/Users/lr1ngtz/projects/cs/.gitignore",
+		"/Users/lr1ngtz/projects/headbutt/main.odin",
+		"/Users/lr1ngtz/projects/headbutt/headbutt.sublime-project",
+		"/Users/lr1ngtz/Odin/core/mem/tracking_allocator.odin",
+		"/Users/lr1ngtz/projects/headbutt/game/game.odin",
+		"/Users/lr1ngtz/projects/untitled/src/Main.java",
+		"/Users/lr1ngtz/projects/untitled/.idea/modules.xml",
+		"/Users/lr1ngtz/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/Users/lr1ngtz/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.Terminus":
+	{
+		"height": 225.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 222.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "dotfiles.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"project",
+				"cs.sublime-project"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"",
+				"cs.sublime-project"
+			],
+			[
+				"main.py",
+				"py_prep/patterns/repo/main.py"
+			],
+			[
+				"cs.",
+				"cs.sublime-project"
+			],
+			[
+				"head",
+				"headbutt.sublime-project"
+			],
+			[
+				"main",
+				"main.odin"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/snippetbox/snippetbox.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

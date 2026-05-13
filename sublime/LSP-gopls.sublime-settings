@@ -1,0 +1,7 @@
+// Settings in here override those in "LSP-gopls/LSP-gopls.sublime-settings"
+
+{
+	"command": ["gopls"],
+	"enablade": false,
+	"enabled": false,
+}
