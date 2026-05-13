@@ -7,6 +7,14 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -288,10 +296,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/lr1ngtz/projects/dotfiles"
+		"/Users/lr1ngtz/projects/dotfiles",
+		"/Users/lr1ngtz/projects/dotfiles/sublime"
 	],
 	"file_history":
 	[
+		"/Users/lr1ngtz/projects/dotfiles/qwe.h",
 		"/Users/lr1ngtz/projects/cs/py_prep/basics/main.py",
 		"/Users/lr1ngtz/projects/cs/py_prep/patterns/repo/main.py",
 		"/Users/lr1ngtz/projects/cs/cs.sublime-project",
@@ -307,7 +317,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -321,6 +331,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"return"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -342,6 +353,37 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/lr1ngtz/projects/cs/py_prep/basics",
+							"lsp_uri": "buffer:135",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -351,7 +393,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"layout":
 	{
