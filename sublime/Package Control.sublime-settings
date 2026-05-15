@@ -1,8 +1,5 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
 	"installed_packages":
 	[
 		"Dockerfile Syntax Highlighting",
@@ -14,6 +11,8 @@
 		"Odin",
 		"Package Control",
 		"SideBarEnhancements",
-		"Terminus",
+	],
+	"in_process_packages":
+	[
 	],
 }

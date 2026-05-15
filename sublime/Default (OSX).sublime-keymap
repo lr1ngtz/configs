@@ -1,3 +1,21 @@
 [
 	{ "keys": ["option+d"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+
+	// LSP
+	{
+        "keys": ["option+z"],
+        "command": "lsp_hover",
+        "context": [{"key": "lsp.session_with_capability", "operand": "hoverProvider"}]
+    },
+    // Goto Definition
+    {
+        "keys": ["option+c"],
+        "command": "lsp_symbol_definition",
+        "args": {"side_by_side": false, "force_group": true, "fallback": false, "group": -1},
+        "context": [
+            {"key": "lsp.session_with_capability", "operand": "definitionProvider"},
+            {"key": "auto_complete_visible", "operand": false}
+        ]
+    },
+	// LSP
 ]
