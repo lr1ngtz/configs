@@ -10,4 +10,6 @@
         "scroll_past_end": true,
         "ensure_newline_at_eof_on_save": true,
         "color_scheme": "gruvbox (Dark) (Hard).sublime-color-scheme",
+        "spell_check": false,
+        "auto_complete": false,        
 }
