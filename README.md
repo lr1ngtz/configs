@@ -1,8 +1,8 @@
-## Configs for emacs, zsh (oh-my-zsh), ghostty
+## My configs
 
 ## When install fresh emacs visit https://github.com/d12frosted/homebrew-emacs-plus?tab=readme-ov-file#install
 
-### Software I use on OS X
+### Software OS X
 * OnyX
 * CleanMyMac
 * AppCleaner
@@ -12,3 +12,5 @@
 * iStat Menus
 * Mo https://github.com/tw93/Mole
 * Sublime Text
+* Sublime Merge
+* Some Jetbrains products

@@ -9,7 +9,8 @@
         "save_on_focus_lost": true,
         "scroll_past_end": true,
         "ensure_newline_at_eof_on_save": true,
-        "color_scheme": "gruvbox (Dark) (Hard).sublime-color-scheme",
+        "color_scheme": "Mariana.sublime-color-scheme",
         "spell_check": false,
-        "auto_complete": false,        
+        "dark_color_scheme": "Mariana.sublime-color-scheme",
+        "light_color_scheme": "Breakers.sublime-color-scheme",
 }

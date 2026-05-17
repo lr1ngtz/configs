@@ -2,6 +2,7 @@
 	{ "keys": ["option+d"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
 
 	// LSP
+
 	{
         "keys": ["option+z"],
         "command": "lsp_hover",
@@ -17,5 +18,6 @@
             {"key": "auto_complete_visible", "operand": false}
         ]
     },
+
 	// LSP
 ]

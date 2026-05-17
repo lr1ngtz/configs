@@ -3,7 +3,6 @@
 	"installed_packages":
 	[
 		"Dockerfile Syntax Highlighting",
-		"gruvbox",
 		"LSP",
 		"LSP-gopls",
 		"LSP-ruff",
