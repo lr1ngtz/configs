@@ -1,3 +1,8 @@
 {
-	"enabled": false
+	"enabled": false,
+	"initialization_options": {
+    "settings": {
+      "configurationPreference": "filesystemFirst"
+    }
+  }
 }
