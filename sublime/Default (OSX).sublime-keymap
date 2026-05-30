@@ -1,5 +1,9 @@
 [
-	{ "keys": ["option+d"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+	{ 
+        "keys": ["option+d"],
+        "command": "delete_word",
+        "args": { "forward": true, "sub_words": true }
+    },
 
 	// LSP
 
@@ -21,10 +25,11 @@
 
 	// LSP
 
+
     // Terminus
 
     { "keys": ["alt+`"], "command": "toggle_terminus_panel" },
-
     
     // Terminus
+
 ]

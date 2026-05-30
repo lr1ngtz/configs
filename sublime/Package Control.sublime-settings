@@ -2,15 +2,17 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
-		"Dockerfile Syntax Highlighting",
+		"A File Icon",
 		"LSP",
 		"LSP-gopls",
 		"LSP-ruff",
 		"LSP-ty",
 		"Odin",
 		"Package Control",
+		"PackageResourceViewer",
 		"SideBarEnhancements",
 		"Terminus",
+		"Theme - Spacegray",
 	],
 	"in_process_packages":
 	[
