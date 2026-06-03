@@ -2,7 +2,7 @@
 	"enabled": false,
 	"initialization_options": {
     "settings": {
-      "configurationPreference": "filesystemFirst"
+      "useVenv": false
     }
   }
 }

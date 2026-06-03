@@ -11,10 +11,9 @@
 		"Package Control",
 		"PackageResourceViewer",
 		"SideBarEnhancements",
-		"Terminus",
-		"Theme - Spacegray",
 	],
 	"in_process_packages":
 	[
 	],
+	"auto_upgrade": false,
 }

@@ -1,16 +1,16 @@
 {
-        "ignored_packages":
-        [
-                "Vintage",
-        ],
-        "font_size": 16,
-        "theme": "Adaptive.sublime-theme",
-        "index_files": true,
-        "save_on_focus_lost": true,
-        "scroll_past_end": true,
-        "ensure_newline_at_eof_on_save": true,
-        "color_scheme": "auto",
-        "spell_check": false,
-        "dark_color_scheme": "Base16 Ocean Dark.sublime-color-scheme",
-        "light_color_scheme": "Base16 Ocean Light.sublime-color-scheme",
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+    "font_size": 16,
+    "theme": "Adaptive.sublime-theme",
+    "index_files": true,
+    "save_on_focus_lost": true,
+    "scroll_past_end": true,
+    "ensure_newline_at_eof_on_save": true,
+    "color_scheme": "auto",
+    "spell_check": false,
+    "dark_color_scheme": "Mariana.sublime-color-scheme",
+    "light_color_scheme": "Breakers.sublime-color-scheme",
 }
