@@ -2,8 +2,10 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
-		"A File Icon",
+		"Alabaster Color Scheme",
+		"JaiTools",
 		"LSP",
+		"LSP-clangd",
 		"LSP-gopls",
 		"LSP-ruff",
 		"LSP-ty",
@@ -11,6 +13,7 @@
 		"Package Control",
 		"PackageResourceViewer",
 		"SideBarEnhancements",
+		"Terminus",
 	],
 	"in_process_packages":
 	[

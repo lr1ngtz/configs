@@ -24,4 +24,11 @@
     },
 
 	// LSP
+
+    // Temrinus
+
+    { "keys": ["option+`"], "command": "toggle_terminus_panel" },
+
+
+    // Temrinus
 ]

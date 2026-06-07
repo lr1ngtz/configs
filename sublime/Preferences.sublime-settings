@@ -4,6 +4,7 @@
         "Vintage",
     ],
     "font_size": 16,
+    "default_font_size": 16,
     "theme": "Adaptive.sublime-theme",
     "index_files": true,
     "save_on_focus_lost": true,
@@ -11,6 +12,7 @@
     "ensure_newline_at_eof_on_save": true,
     "color_scheme": "auto",
     "spell_check": false,
-    "dark_color_scheme": "Mariana.sublime-color-scheme",
-    "light_color_scheme": "Breakers.sublime-color-scheme",
+    "dark_color_scheme": "Alabaster Dark.sublime-color-scheme",
+    "light_color_scheme": "Alabaster.sublime-color-scheme",
+    "line_numbers": false,
 }
