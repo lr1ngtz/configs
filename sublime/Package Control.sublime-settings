@@ -3,10 +3,8 @@
 	"installed_packages":
 	[
 		"Alabaster Color Scheme",
-		"JaiTools",
 		"LSP",
 		"LSP-clangd",
-		"LSP-gopls",
 		"LSP-ruff",
 		"LSP-ty",
 		"Odin",
@@ -14,6 +12,7 @@
 		"PackageResourceViewer",
 		"SideBarEnhancements",
 		"Terminus",
+		"Theme - Spacegray",
 	],
 	"in_process_packages":
 	[

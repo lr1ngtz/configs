@@ -7,7 +7,12 @@ macos-option-as-alt = true
 font-size = 16
 font-family = Menlo
 
-theme = Mariana
+theme = Oceanic Next
+
+#theme = Mariana
+#theme = Monokai Classic
+#theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+#theme = Gruvbox Dark
 
 # cursor-style-blink = false
 shell-integration-features = no-cursor
