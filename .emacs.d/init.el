@@ -3,9 +3,21 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(doric-obsidian))
+ '(custom-enabled-themes '(alabaster-themes-dark))
  '(custom-safe-themes
-   '("d422edfdab7b5f84fb305732eaa36963b890acbd5cc88233309c042b8e967197"
+   '("68e9ab92a95e1ab84478c94a912766b00cf2b492b6b56db39f7e5d31c65498a2"
+     "1eaf5b063f0a33436f094ac9866a05d7bc8488acdf661110516f9a796d3471af"
+     "ee10ae769b2f1383371a1e271ee1ddbed2bd9969331cc9417921f4251efbce0f"
+     "f06a77b1c3433502f0f1db69c0b7a4c686c78d43d7cbfd486ca39d8da983f832"
+     "eccbc5afab954d8d4cd7748921cc93c2e770eb8059cb43bf2ef3bcbb4a9aca51"
+     "6b9fbe5d88424ac7283b8f36b6f184d1140fcd4bfcab1f72a3c58c48dc254bae"
+     "26a8e9035bda6d46d95bbf224ac52e90eb5befd80f5a083b72865697c8a81304"
+     "1fa665965395c909dc60fc35b66a2ad902904334cf2b9beb2b07dddab67c782a"
+     "b5beaec9ea4c8d0b3a104b4bf9ce4e7519a4a5a045527af8e6a93df85111048c"
+     "00b98b7447d11b4c3bc37588014459a764e8fb3ad3504443af69ead9a5dbc27d"
+     "b5ac0a656be7115492b8a1e39eabac55c2f0fb267577f7f5406278a7ed1198c5"
+     "d8541a7c1ca4117b056b34ddf9ed5a6e2547eaf554dc0e7f7b6e15ed14490a37"
+     "d422edfdab7b5f84fb305732eaa36963b890acbd5cc88233309c042b8e967197"
      "9819b94dc38ee935362d4bf1c1198ebb8ebeabb5e8c85a78436565720d91c0d7"
      "2505c0699e53e5ff10708b6d86f2224abd79357b27de79136605b450a1785585"
      "106fadeab4fb8cf50eeae1e1fd051ae00d0e71a40b5b0f0f5b9db85015398a61"
@@ -23,10 +35,11 @@
      "83a14237576924321c9b6855bd3e9b6f96d12446c0cec7b58b22775df6d4f3fe"
      "" default))
  '(package-selected-packages
-   '(company consult consult-flycheck dockerfile-mode doric-themes
-             dumb-jump flycheck go-mode gruvbox-theme magit marginalia
-             markdown-mode multiple-cursors orderless pbcopy
-             sketch-themes tmpl-mode typescript-mode vertico)))
+   '(alabaster-themes company consult consult-flycheck dockerfile-mode
+                      doric-themes dumb-jump flycheck go-mode
+                      gruvbox-theme magit marginalia markdown-mode
+                      multiple-cursors orderless pbcopy sketch-themes
+                      tmpl-mode typescript-mode vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -241,17 +254,3 @@
 (require 'odin-mode)
 (add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-mode))
 
-
-;; (use-package sketch-themes
-;;   :config
-;;   ;; Load black version
-;;   (load-theme 'sketch-black t))
-;;   ;; Load white version
-;; ;; (load-theme 'sketch-white t))
-
-
-;;(add-to-list 'load-path "~/.emacs.d/lisp/")
-
-;;(require 'xah-fly-keys)
-;;(xah-fly-keys-set-layout "qwerty")
-;;(xah-fly-keys 0)
